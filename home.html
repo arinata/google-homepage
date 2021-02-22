@@ -19,6 +19,14 @@
         margin-top: 15px;
         margin-bottom: 15px;
     }
+    .footer-left{
+        margin-left: 0px;
+        padding-right: 30%;
+    }
+    .footer-right{
+        margin-right: 0px;
+        padding-left: 30%;
+    }
     .texts{
         font-size: 12px;
     }
@@ -29,6 +37,10 @@
         list-style-type: none;
         margin: 0;
         padding-left: 80%;
+    }
+    .ul-bottom{
+        list-style-type: none;
+        margin: 0;
     }
     li {
         float: left;
@@ -43,6 +55,25 @@
     }
     li a:hover {
         text-decoration: underline;
+    }
+    .padding-language{
+        font-size: 15px;
+        margin-top: auto;
+        position: absolute;
+        bottom: 45px;
+        padding-left: 45px;
+        float: left;
+    }
+    .padding-footer{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    #footers{
+        font-size: 15px;
+        left: 0px;
+        right: 0px;
+        position: absolute;
+        bottom: 10px;
     }
 </style>
 <html>
@@ -73,20 +104,20 @@
     <div class="padded">
         <p class="items texts">Google offered in: <a class="texts-a" href="Indonesia">Indonesia</a>  <a class="texts-a" href="Basa Bali">Basa Bali</a></p>
     </div>
-    <div class="padded">
+    <div class="padded padding-language">
         <p>Indonesia</p>
     </div>
-    <div class="padded">
-        <div id="footer-left">
-            <ul>
+    <div class="padded" id="footers">
+        <div id="footer-left" class="footer-left">
+            <ul class="ul-bottom">
                 <li><a href="#About">About</a></li>
                 <li><a href="#Advertising">Advertising</a></li>
                 <li><a href="#Business">Business</a></li>
                 <li><a href="#How Search works">How Search works</a></li>
             </ul>
         </div>
-        <div id="footer-right">
-            <ul>
+        <div id="footer-right" class="footer-right">
+            <ul class="ul-bottom">
                 <li><a href="#Privacy">Privacy</a></li>
                 <li><a href="#Terms">Terms</a></li>
                 <li><a href="#Settings">Settings</a></li>
